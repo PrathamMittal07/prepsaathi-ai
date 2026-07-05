@@ -57,7 +57,7 @@ export default function DashboardPage() {
             description="Create personalized DSA plans."
             icon={Map}
             colorClass="from-cyan-500/10 to-cyan-500/0 border-cyan-500/20"
-            onClick={() => router.push('/dashboard/roadmap')}
+            onClick={() => router.push('/dashboard/dsa-roadmap')}
           />
           <DashboardCard 
             title="Analyze Resume"

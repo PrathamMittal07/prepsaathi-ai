@@ -18,7 +18,7 @@ const sidebarItems = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
   { name: 'AI Assistant', href: '/dashboard/assistant', icon: Bot },
   { name: 'Resume Analyzer', href: '/dashboard/resume', icon: FileText },
-  { name: 'DSA Roadmap', href: '/dashboard/roadmap', icon: Map },
+  { name: 'DSA Roadmap', href: '/dashboard/dsa-roadmap', icon: Map },
   { name: 'Mock Interview', href: '/dashboard/interview', icon: Video },
   { name: 'Progress Tracker', href: '/dashboard/progress', icon: LineChart },
 ]
