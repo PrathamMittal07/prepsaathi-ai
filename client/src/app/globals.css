@@ -22,15 +22,6 @@
   --font-sans: var(--font-sans), "Inter", sans-serif;
   --font-syne: var(--font-sans), "Inter", sans-serif;
 
-  /* Spacing Scale - 8pt system */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
-
   /* Border Radius */
   --radius-card: 20px;
   --radius-button: 14px;
