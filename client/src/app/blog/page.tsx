@@ -52,7 +52,7 @@ export default function Blog() {
           
           <div className="mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6">The Prep2Place Blog</h1>
-            <p className="text-xl text-gray-600 max-w-2xl">
+            <p style={{ maxWidth: '672px' }} className="text-xl text-gray-600">
               Insights, strategies, and deep-dives on how to navigate the modern tech recruiting landscape.
             </p>
           </div>
