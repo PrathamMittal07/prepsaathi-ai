@@ -24,9 +24,9 @@ export default function Pricing() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-5xl mx-auto px-6 relative z-10">
+        <div style={{ width: '100%', maxWidth: '1024px', margin: '0 auto' }} className="pt-32 pb-24 px-6 relative z-10">
           
-          <div className="text-center mb-20 max-w-3xl mx-auto">
+          <div style={{ width: '100%', maxWidth: '768px', margin: '0 auto', textAlign: 'center' }} className="mb-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#8E2F52]/10 text-[#8E2F52] text-sm font-semibold tracking-wide uppercase mb-6">
               <Sparkles className="w-4 h-4" />
               Early Access Pricing
@@ -39,7 +39,7 @@ export default function Pricing() {
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
+          <div style={{ width: '100%', maxWidth: '448px', margin: '0 auto' }}>
             <div className="bg-white rounded-3xl p-8 md:p-10 border-2 border-[#8E2F52] shadow-xl relative overflow-hidden transform transition-all hover:-translate-y-1">
               
               <div className="absolute top-0 right-0 bg-[#8E2F52] text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
