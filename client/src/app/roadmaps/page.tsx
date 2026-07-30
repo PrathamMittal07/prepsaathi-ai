@@ -9,6 +9,7 @@ export default function Roadmaps() {
   const roadmaps = [
     {
       title: "Software Development Engineer (SDE)",
+      slug: "sde",
       icon: <Code className="w-8 h-8 text-[#8E2F52]" />,
       description: "The complete path to landing an SDE role at top tech companies. Covers DSA, System Design, and CS Fundamentals.",
       duration: "6 Months",
@@ -16,6 +17,7 @@ export default function Roadmaps() {
     },
     {
       title: "Frontend Developer",
+      slug: "frontend-developer",
       icon: <LayoutTemplate className="w-8 h-8 text-[#8E2F52]" />,
       description: "Master React, Next.js, and modern CSS to build stunning user interfaces and land frontend roles.",
       duration: "4 Months",
@@ -23,6 +25,7 @@ export default function Roadmaps() {
     },
     {
       title: "Data Scientist",
+      slug: "data-scientist",
       icon: <Database className="w-8 h-8 text-[#8E2F52]" />,
       description: "Learn Python, SQL, Machine Learning, and Statistics to break into data science.",
       duration: "6 Months",
@@ -30,6 +33,7 @@ export default function Roadmaps() {
     },
     {
       title: "Mobile App Developer",
+      slug: "mobile-developer",
       icon: <Smartphone className="w-8 h-8 text-[#8E2F52]" />,
       description: "Build iOS and Android applications using React Native or Flutter.",
       duration: "4 Months",
@@ -79,7 +83,7 @@ export default function Roadmaps() {
                     </div>
                   </div>
                   
-                  <Link href="/signup" className="flex items-center gap-2 text-[#8E2F52] font-semibold hover:text-[#A93C5D] transition-colors">
+                  <Link href={`/roadmaps/${roadmap.slug}`} className="flex items-center gap-2 text-[#8E2F52] font-semibold hover:text-[#A93C5D] transition-colors">
                     Start Path <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
