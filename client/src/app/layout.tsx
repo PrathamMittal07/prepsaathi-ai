@@ -13,16 +13,22 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Prep2Place ?" Your AI-Powered Placement Companion',
+  metadataBase: new URL('https://prepsaathi-ai-sable.vercel.app'),
+  title: 'Prep2Place — Your AI-Powered Placement Companion',
   description:
     'Prep2Place helps students prepare for interviews, DSA, aptitude, resumes, and technical subjects using personalized AI-driven workflows.',
-  keywords: ['placement preparation', 'AI interview prep', 'DSA', 'resume analyzer', 'mock interview'],
+  keywords: ['placement preparation', 'AI interview prep', 'DSA', 'resume analyzer', 'mock interview', 'career coach'],
   authors: [{ name: 'Prep2Place' }],
   openGraph: {
-    title: 'Prep2Place ?" Your AI-Powered Placement Companion',
+    title: 'Prep2Place — Your AI-Powered Placement Companion',
     description: 'Land your dream job with AI-powered placement preparation.',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prep2Place — Your AI-Powered Placement Companion',
+    description: 'Land your dream job with AI-powered placement preparation.',
+  }
 }
 
 export default function RootLayout({
