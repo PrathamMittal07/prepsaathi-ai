@@ -1,204 +1,147 @@
 import Button from '@/components/Button'
-import Badge from '@/components/Badge'
+
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-20 overflow-hidden">
-      {/* Background effects */}
-      <div className="absolute inset-0 grid-pattern opacity-40" />
-      
-      {/* Glow blobs */}
-      <div
-        className="glow-blob pulse-glow"
-        style={{
-          width: '600px',
-          height: '600px',
-          top: '-100px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          background: 'radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(139, 92, 246, 0.08) 50%, transparent 70%)',
-        }}
-      />
-      <div
-        className="glow-blob"
-        style={{
-          width: '400px',
-          height: '400px',
-          bottom: '10%',
-          left: '-10%',
-          background: 'radial-gradient(circle, rgba(34, 211, 238, 0.08) 0%, transparent 70%)',
-          animation: 'pulseGlow 6s ease-in-out infinite reverse',
-        }}
-      />
-      <div
-        className="glow-blob"
-        style={{
-          width: '300px',
-          height: '300px',
-          bottom: '20%',
-          right: '-5%',
-          background: 'radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%)',
-          animation: 'pulseGlow 5s ease-in-out infinite',
-        }}
-      />
-
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
-        {/* Badge */}
-        <div className="animate-fade-in-up animate-delay-1 flex justify-center mb-8">
-          <Badge dot>
-            AI-Powered Placement Preparation Platform
-          </Badge>
-        </div>
-
-        {/* Main heading */}
-        <h1 className="animate-fade-in-up animate-delay-2 font-syne font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tight mb-6">
-          Your AI-Powered
-          <br />
-          <span className="gradient-text">Placement Companion</span>
-        </h1>
-
-        {/* Subheading */}
-        <p className="animate-fade-in-up animate-delay-3 text-text-secondary text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
-          PrepSaathi AI helps students prepare for interviews, DSA, aptitude, resumes,
-          and technical subjects using{' '}
-          <span className="text-text-primary font-normal">personalized AI-driven workflows</span>.
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="animate-fade-in-up animate-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <Button variant="primary" size="lg" href="/signup">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 1L11.5 6.5L17.5 7.5L13 12L14 18L9 15L4 18L5 12L0.5 7.5L6.5 6.5L9 1Z" fill="currentColor" />
-            </svg>
-            Get Started Free
-          </Button>
-          <Button variant="secondary" size="lg" href="#features">
-            Explore Features
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </Button>
-        </div>
-
-        {/* Stats */}
-        <div className="animate-fade-in-up animate-delay-5">
-          <div className="inline-flex flex-wrap justify-center items-center gap-8 sm:gap-12 px-8 py-5 rounded-2xl border border-white/[0.07] bg-white/[0.02] backdrop-blur-sm">
-            {[
-              { value: '10K+', label: 'Students' },
-              { value: '500+', label: 'Questions' },
-              { value: '95%', label: 'Satisfaction' },
-              { value: '200+', label: 'Companies' },
-            ].map((stat, i) => (
-              <div key={i} className="text-center">
-                <div className="font-syne font-bold text-2xl text-text-primary">
-                  {stat.value}
-                </div>
-                <div className="text-text-secondary text-xs font-medium mt-0.5 uppercase tracking-widest">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+    <section id="hero" className="w-full max-w-[1440px] mx-auto px-[clamp(24px,5vw,80px)] relative z-10 pt-16 lg:pt-24 pb-32">
+      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,52fr)_minmax(0,48fr)] items-center gap-16 lg:gap-32 w-full relative z-10">
+        
+        {/* LEFT COLUMN */}
+        <div className="w-full flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="mb-6 animate-fade-in-up">
+            <span className="text-sm sm:text-base font-bold uppercase tracking-[0.2em] text-[var(--color-accent-maroon)]">AI Placement Platform for Engineering Students</span>
           </div>
-        </div>
 
-        {/* Hero visual — floating UI card */}
-        <div className="animate-fade-in-up animate-delay-6 mt-20 relative">
-          <div className="relative mx-auto max-w-3xl">
-            {/* Glow behind card */}
-            <div
-              className="absolute inset-0 rounded-3xl"
-              style={{
-                background: 'radial-gradient(ellipse at 50% 50%, rgba(99, 102, 241, 0.2), transparent 70%)',
-                filter: 'blur(24px)',
-                transform: 'scale(1.1)',
-              }}
-            />
-            {/* Main card */}
-            <div className="relative glass-card rounded-3xl p-6 sm:p-8 text-left">
-              {/* Card header */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="flex gap-1.5">
-                  <span className="w-3 h-3 rounded-full bg-red-500/70" />
-                  <span className="w-3 h-3 rounded-full bg-yellow-500/70" />
-                  <span className="w-3 h-3 rounded-full bg-green-500/70" />
-                </div>
-                <div className="flex-1 h-7 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center px-3">
-                  <span className="text-xs text-text-muted font-mono">prepsaathi.ai/dashboard</span>
-                </div>
-              </div>
+          <h1 className="text-hero-title mb-6 max-w-[600px] animate-fade-in-up animate-delay-1">
+            Master your <br />
+            <span className="text-[var(--color-accent-maroon)]">tech interviews</span> <br />
+            with AI precision
+          </h1>
 
-              {/* Dashboard preview content */}
-              <div className="grid grid-cols-3 gap-3 mb-5">
-                {[
-                  { label: 'DSA Progress', value: '68%', color: 'indigo', bar: 68 },
-                  { label: 'Mock Interviews', value: '12', color: 'purple', bar: 80 },
-                  { label: 'Resume Score', value: '84/100', color: 'cyan', bar: 84 },
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="rounded-xl p-3 bg-white/[0.03] border border-white/[0.06] hover:border-indigo-500/30 transition-colors duration-200"
-                  >
-                    <div className="text-xs text-text-secondary mb-1">{item.label}</div>
-                    <div className="font-syne font-bold text-lg text-text-primary mb-2">{item.value}</div>
-                    <div className="h-1 rounded-full bg-white/[0.08] overflow-hidden">
-                      <div
-                        className={`h-full rounded-full bg-${item.color}-500`}
-                        style={{ width: `${item.bar}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+          <p className="text-body-text mb-12 max-w-[540px] animate-fade-in-up animate-delay-2 text-pretty leading-[1.8]">
+            The ultimate placement preparation platform. Get personalized roadmaps, realistic AI mock interviews, and instantly graded resumes to land your dream job faster.
+          </p>
 
-              {/* AI chat snippet */}
-              <div className="rounded-xl p-4 bg-white/[0.03] border border-white/[0.06]">
-                <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0 text-xs font-bold text-white">
-                    AI
-                  </div>
-                  <div>
-                    <p className="text-sm text-text-secondary leading-relaxed">
-                      <span className="text-indigo-400 font-medium">PrepSaathi:</span> Based on your performance, I recommend focusing on{' '}
-                      <span className="text-text-primary">Dynamic Programming</span> and{' '}
-                      <span className="text-text-primary">Graph Traversal</span> this week. You have an interview with{' '}
-                      <span className="text-indigo-400">Google</span> in 12 days. 🎯
-                    </p>
-                  </div>
-                </div>
-                {/* Typing indicator */}
-                <div className="flex items-center gap-2 mt-3 ml-10">
-                  <div className="flex gap-1">
-                    {[0, 1, 2].map((i) => (
-                      <span
-                        key={i}
-                        className="w-1.5 h-1.5 rounded-full bg-indigo-400"
-                        style={{
-                          animation: `pulseGlow 1.2s ease-in-out infinite`,
-                          animationDelay: `${i * 0.2}s`,
-                        }}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-xs text-text-muted">Analyzing your next task...</span>
-                </div>
-              </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-14 w-full sm:w-auto animate-fade-in-up animate-delay-3">
+            <Button variant="primary" className="group w-full sm:w-auto h-[56px] px-10 text-lg">
+              Start Preparing Free
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" className="transition-transform duration-300 group-hover:translate-x-1 ml-2">
+                <path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </Button>
+            <Button variant="secondary" className="w-full sm:w-auto h-[56px] px-10 text-lg" href="#features">
+              How it works
+            </Button>
+          </div>
+
+          {/* Statistics */}
+          <div className="flex flex-row items-center justify-center lg:justify-between gap-8 sm:gap-12 lg:gap-0 pt-10 border-t border-[var(--color-border)] w-full max-w-[520px] animate-fade-in-up animate-delay-4">
+            <div className="flex flex-col gap-1.5 items-center lg:items-start">
+              <span className="font-sans font-bold text-[clamp(1.75rem,3vw,2.25rem)] text-text-primary tracking-tight leading-none">10K+</span>
+              <span className="text-small-text">Active Students</span>
+            </div>
+            <div className="flex flex-col gap-1.5 items-center lg:items-start">
+              <span className="font-sans font-bold text-[clamp(1.75rem,3vw,2.25rem)] text-text-primary tracking-tight leading-none">95%</span>
+              <span className="text-small-text">Interview Success</span>
+            </div>
+            <div className="flex flex-col gap-1.5 items-center lg:items-start">
+              <span className="font-sans font-bold text-[clamp(1.75rem,3vw,2.25rem)] text-text-primary tracking-tight leading-none">200+</span>
+              <span className="text-small-text">Companies</span>
             </div>
           </div>
         </div>
-      </div>
+        
+        {/* RIGHT COLUMN */}
+        <div className="w-full flex items-center justify-center lg:justify-end animate-fade-in-up animate-delay-2 mt-12 lg:mt-0">
+          
+          <div className="relative w-full max-w-[600px]">
+            {/* Dashboard Card - Explicitly dark theme for contrast per user request */}
+            <div className="relative shadow-[0_30px_120px_20px_rgba(0,0,0,0.1),0_10px_40px_rgba(0,0,0,0.05)] border border-white/[0.08] p-6 sm:p-8 z-10 w-full rounded-[24px] bg-[#0a0a12] text-white transition-all duration-300 hover:-translate-y-1">
+              
+              {/* Dashboard Header */}
+              <div className="flex items-start sm:items-center justify-between flex-col sm:flex-row gap-4 mb-6 pb-6 border-b border-white/[0.06]">
+                <div className="flex items-center gap-4">
+                  <div className="w-11 h-11 rounded-[14px] bg-gradient-to-br from-[var(--color-accent-purple)] to-[#4B3DE5] flex items-center justify-center shadow-md shrink-0">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg>
+                  </div>
+                  <div>
+                    <div className="text-base font-semibold text-white tracking-wide">DSA Progress</div>
+                    <div className="text-sm text-gray-400 mt-0.5">Week 4 • Dynamic Programming</div>
+                  </div>
+                </div>
+                
+                <div className="flex flex-row sm:flex-col items-center sm:items-end gap-2 sm:gap-0.5">
+                  <div className="text-sm sm:text-base font-semibold text-white">
+                    Resume Score <span className="text-[#8E2C4B] font-bold ml-1">92</span>
+                  </div>
+                  <div className="text-xs sm:text-sm text-gray-400">Top 5% Bracket</div>
+                </div>
+              </div>
 
-      {/* Scroll cue */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-        <div
-          className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center pt-1.5"
-          aria-hidden
-        >
-          <div
-            className="w-1 h-2 rounded-full bg-white/60"
-            style={{ animation: 'float 2s ease-in-out infinite' }}
-          />
+              {/* Statistics Cards */}
+              <div className="grid grid-cols-2 gap-5 mb-6">
+                <div className="rounded-[16px] p-5 bg-white/[0.03] border border-white/[0.05] transition-all duration-300 hover:bg-white/[0.05] hover:-translate-y-0.5 hover:shadow-lg">
+                  <div className="text-sm text-gray-400 mb-2 font-medium">Problems Solved</div>
+                  <div className="font-sans font-bold text-4xl text-white">124</div>
+                  <div className="mt-4 h-2 w-full bg-white/[0.05] rounded-full overflow-hidden">
+                    <div className="h-full bg-[#C89A3D] w-[68%] rounded-full" />
+                  </div>
+                </div>
+                <div className="rounded-[16px] p-5 bg-white/[0.03] border border-white/[0.05] transition-all duration-300 hover:bg-white/[0.05] hover:-translate-y-0.5 hover:shadow-lg">
+                  <div className="text-sm text-gray-400 mb-2 font-medium">Mock Interviews</div>
+                  <div className="font-sans font-bold text-4xl text-white">12</div>
+                  <div className="mt-4 h-2 w-full bg-white/[0.05] rounded-full overflow-hidden">
+                    <div className="h-full bg-[#8E2C4B] w-[85%] rounded-full" />
+                  </div>
+                </div>
+              </div>
+
+              {/* AI Assistant */}
+              <div className="rounded-[16px] p-5 bg-gradient-to-r from-[#8E2C4B]/10 to-transparent border border-[#8E2C4B]/20 mb-6 transition-all duration-300 hover:border-[#8E2C4B]/30">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-[#8E2C4B]/20 border border-[#8E2C4B]/30 flex items-center justify-center flex-shrink-0 text-[#8E2C4B] mt-0.5">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-[#8E2C4B] font-bold text-sm mb-1">AI Assistant</h4>
+                    <p className="text-sm text-gray-200 leading-relaxed font-medium mb-4 text-pretty">
+                      &quot;Your graph traversal speed has improved by 40%. Focus on Dynamic Programming this week.&quot;
+                    </p>
+                    
+                    <button className="flex flex-col items-start w-full sm:w-auto text-left bg-white/[0.05] hover:bg-white/[0.08] border border-white/[0.05] hover:border-white/[0.1] rounded-[12px] py-2.5 px-4 transition-all duration-200 group">
+                      <span className="flex items-center gap-2 text-sm font-semibold text-white group-hover:text-[#C89A3D] transition-colors">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Google Mock Interview
+                      </span>
+                      <span className="text-xs text-gray-400 mt-1 ml-6">
+                        Tomorrow • 7:00 PM
+                      </span>
+                    </button>
+                    
+                  </div>
+                </div>
+              </div>
+
+              {/* Upcoming Interview */}
+              <div className="pt-6 border-t border-white/[0.06] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <span className="relative flex h-2.5 w-2.5 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+                  </span>
+                  <div>
+                    <div className="text-sm font-semibold text-white tracking-wide">Google Mock Interview</div>
+                    <div className="text-xs text-gray-400 mt-1">Tomorrow • 7:00 PM</div>
+                  </div>
+                </div>
+                <div className="bg-white/10 text-gray-300 border border-white/10 font-medium px-3 py-1 text-xs rounded-full">Scheduled</div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-        <span className="text-xs text-text-muted uppercase tracking-widest">Scroll</span>
       </div>
     </section>
   )

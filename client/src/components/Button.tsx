@@ -1,58 +1,55 @@
-'use client'
-
-import React from 'react'
+import { ReactNode } from 'react'
 import Link from 'next/link'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost'
+interface ButtonProps {
+  children: ReactNode
+  variant?: 'primary' | 'secondary' | 'ghost' | 'destructive'
   size?: 'sm' | 'md' | 'lg'
+  className?: string
   href?: string
-  external?: boolean
-}
-
-const sizeClasses = {
-  sm: 'px-4 py-2 text-sm rounded-xl',
-  md: 'px-6 py-3 text-sm rounded-xl',
-  lg: 'px-8 py-4 text-base rounded-2xl',
+  onClick?: () => void
+  disabled?: boolean
+  type?: 'button' | 'submit' | 'reset'
 }
 
 export default function Button({
+  children,
   variant = 'primary',
   size = 'md',
+  className = '',
   href,
   onClick,
-  children,
-  className = '',
-  external = false,
-  ...props
+  disabled = false,
+  type = 'button'
 }: ButtonProps) {
-  const baseClasses = `inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:ring-offset-2 focus:ring-offset-bg-primary select-none disabled:opacity-50 disabled:cursor-not-allowed ${sizeClasses[size]}`
-
-  const variantClasses = {
-    primary: 'btn-primary',
-    secondary: 'btn-secondary',
-    ghost: 'text-text-secondary hover:text-text-primary hover:bg-white/5 rounded-xl transition-colors duration-200',
+  
+  const baseStyles = "inline-flex items-center justify-center font-sans font-medium rounded-[14px] transition-all duration-200 cursor-pointer"
+  
+  const sizeStyles = {
+    sm: "px-4 py-2 text-sm",
+    md: "px-6 py-3 text-base",
+    lg: "px-8 py-4 text-lg"
   }
-
-  const classes = `${baseClasses} ${variantClasses[variant]} ${className}`
-
+  
+  const variantStyles = {
+    primary: "bg-[#1D1D1D] hover:bg-black text-white shadow-[0_8px_30px_rgba(15,23,42,0.06)] hover:shadow-[0_18px_40px_rgba(15,23,42,0.12)] hover:-translate-y-[2px]",
+    secondary: "bg-white border border-[rgba(15,23,42,0.06)] text-[#1D1D1D] shadow-[0_4px_12px_rgba(15,23,42,0.04)] hover:shadow-[0_8px_20px_rgba(15,23,42,0.08)] hover:-translate-y-[2px]",
+    ghost: "bg-transparent text-[#6B6B6B] hover:text-[#1D1D1D] hover:bg-black/5 hover:-translate-y-[1px]",
+    destructive: "bg-red-500 hover:bg-red-600 text-white shadow-[0_8px_30px_rgba(239,68,68,0.2)] hover:-translate-y-[2px]"
+  }
+  
+  const styles = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`
+  
   if (href) {
-    if (external) {
-      return (
-        <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
-          {children}
-        </a>
-      )
-    }
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={styles}>
         {children}
       </Link>
     )
   }
-
+  
   return (
-    <button onClick={onClick} className={classes} {...props}>
+    <button type={type} onClick={onClick} disabled={disabled} className={styles}>
       {children}
     </button>
   )

@@ -95,7 +95,7 @@ export const HOW_IT_WORKS = [
   {
     step: '01',
     title: 'Set Your Goals',
-    description: 'Tell PrepSaathi your target companies, timeline, and current skill level.',
+    description: 'Tell Prep2Place your target companies, timeline, and current skill level.',
   },
   {
     step: '02',

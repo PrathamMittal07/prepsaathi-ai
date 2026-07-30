@@ -16,7 +16,7 @@ export default function ChatInput() {
         <textarea
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Message PrepSaathi AI..."
+          placeholder="Message Prep2Place..."
           className="w-full bg-transparent border-none text-text-primary placeholder-text-secondary focus:ring-0 resize-none py-3 px-2 max-h-32 overflow-y-auto"
           rows={1}
           style={{ minHeight: '48px' }}

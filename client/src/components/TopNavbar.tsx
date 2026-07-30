@@ -1,6 +1,15 @@
+'use client'
+
 import { BrainCircuit, Search, Bell } from 'lucide-react'
+import { useAuth } from '@/features/auth/context/AuthContext'
 
 export default function TopNavbar() {
+  const { user } = useAuth()
+  
+  const initials = user?.profile?.firstName
+    ? `${user.profile.firstName[0]}${user.profile.lastName?.[0] || ''}`.toUpperCase()
+    : 'U'
+    
   return (
     <header className="h-16 flex-shrink-0 bg-bg-card border-b border-white/10 flex items-center justify-between px-6 lg:px-8">
       <div className="flex-1 flex items-center gap-4 md:hidden">
@@ -24,7 +33,7 @@ export default function TopNavbar() {
           <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-indigo-500 rounded-full border-2 border-bg-card"></span>
         </button>
         <div className="w-8 h-8 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 border-2 border-bg-card cursor-pointer flex items-center justify-center text-sm font-bold text-white shadow-[0_0_10px_rgba(99,102,241,0.4)] hover:shadow-[0_0_15px_rgba(99,102,241,0.6)] transition-shadow duration-300">
-          JD
+          {initials}
         </div>
       </div>
     </header>

@@ -1,0 +1,990 @@
+2026-07-24T01:18:52.279Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:19:01.915Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:19:22.691Z - Failed to extract text from PDF
+Error: Failed to extract text from PDF
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:26:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T01:34:39.242Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:34:48.871Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:35:09.261Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T01:57:30.924Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:57:38.233Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T01:57:52.278Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T01:58:37.322Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T02:15:25.572Z - 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+PrismaClientValidationError: 
+Invalid `prisma.careerProfile.findUnique()` invocation in
+E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:48
+
+   7 static async getProfile(req: Request, res: Response, next: NextFunction) {
+   8   try {
+   9     const userId = (req as any).user.id;
+→ 10     let profile = await prisma.careerProfile.findUnique({
+           where: {
+             userId: "6647362a-95f9-4fd4-8e34-c2ac45219a46"
+           },
+           include: {
+             user: {
+               select: {
+                 email: true,
+                 firstName: true,
+                 ~~~~~~~~~
+                 lastName: true,
+         ?       id?: true,
+         ?       passwordHash?: true,
+         ?       createdAt?: true,
+         ?       deletedAt?: true,
+         ?       roles?: true,
+         ?       resumes?: true,
+         ?       roadmaps?: true,
+         ?       applications?: true,
+         ?       sessions?: true,
+         ?       profile?: true,
+         ?       careerProfile?: true,
+         ?       files?: true,
+         ?       recommendations?: true,
+         ?       _count?: true
+               }
+             }
+           }
+         })
+
+Unknown field `firstName` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:46:9)
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:211:7)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async getProfile (E:\prepsaathi-ai\server\src\controllers\career.controller.ts:10:21)
+
+2026-07-24T02:33:20.266Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T02:33:21.431Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T02:39:18.712Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T02:39:19.563Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T02:39:55.303Z - Failed to save processed resume to database.
+Error: Failed to save processed resume to database.
+    at ResumeProcessingService.processResume (E:\prepsaathi-ai\server\src\services\resume-processing.service.ts:122:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:13:22)
+
+2026-07-24T02:40:01.109Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T02:40:26.685Z - Failed to save processed resume to database.
+Error: Failed to save processed resume to database.
+    at ResumeProcessingService.processResume (E:\prepsaathi-ai\server\src\services\resume-processing.service.ts:122:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:13:22)
+
+2026-07-24T02:40:36.743Z - 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.findMany()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:49:26
+
+  46 }
+  47 
+  48 static async getUserResumes(userId: string) {
+→ 49   return prisma.resume.findMany(
+The column `ResumeAnalysis.summary` does not exist in the current database.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async listMyResumes (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:21:23)
+
+2026-07-24T03:04:00.422Z - Failed to save processed resume to database.
+Error: Failed to save processed resume to database.
+    at ResumeProcessingService.processResume (E:\prepsaathi-ai\server\src\services\resume-processing.service.ts:122:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:13:22)
+
+2026-07-24T03:05:07.582Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:05:07.940Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:05:08.393Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:15:16.832Z - Not found
+Error: Not found
+    at ResumeService.deleteResume (E:\prepsaathi-ai\server\src\services\resume.service.ts:65:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:15:17.107Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:15:17.800Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:15:18.329Z - 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+PrismaClientKnownRequestError: 
+Invalid `prisma.resume.delete()` invocation in
+E:\prepsaathi-ai\server\src\services\resume.service.ts:75:26
+
+  72   }
+  73 }
+  74 
+→ 75 return prisma.resume.delete(
+An operation failed because it depends on one or more records that were required but not found. No record was found for a delete.
+    at zr.handleRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:237:13)
+    at zr.handleAndLogRequestError (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:183:12)
+    at zr.request (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\RequestHandler.ts:152:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async a (E:\prepsaathi-ai\server\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:963:24)
+    at async deleteResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:44:7)
+
+2026-07-24T03:15:18.614Z - Resume not found
+Error: Resume not found
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:11:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T03:16:23.419Z - Failed to save processed resume to database.
+Error: Failed to save processed resume to database.
+    at ResumeProcessingService.processResume (E:\prepsaathi-ai\server\src\services\resume-processing.service.ts:122:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async processResume (E:\prepsaathi-ai\server\src\controllers\resume.controller.ts:13:22)
+
+2026-07-24T03:17:19.825Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-24T03:17:26.685Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-29T13:34:06.834Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-29T13:35:00.594Z - Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:27:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-29T14:19:25.489Z - Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:37:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-29T14:19:40.898Z - Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:37:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
+2026-07-29T14:24:11.277Z - Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+Error: Failed to extract text from PDF: Failed to fetch PDF: 401 Unauthorized
+    at ResumeAnalysisService.requestAnalysis (E:\prepsaathi-ai\server\src\services\resume-analysis.service.ts:37:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async requestAnalysis (E:\prepsaathi-ai\server\src\controllers\resume-analysis.controller.ts:13:24)
+
