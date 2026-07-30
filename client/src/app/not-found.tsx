@@ -14,8 +14,8 @@ export default function NotFound() {
       </div>
       
       <h2 className="text-2xl md:text-3xl font-bold font-syne mb-4">Page not found</h2>
-      <p className="text-text-secondary text-lg max-w-md mx-auto mb-10">
-        Sorry, we couldn&apos;t find the page you&apos;re looking for. It might have been moved or doesn&apos;t exist.
+      <p style={{ maxWidth: '448px' }} className="text-text-secondary text-lg mx-auto mb-10">
+        We couldn't find the page you were looking for. It might have been moved or doesn't exist.
       </p>
       
       <Link href="/" className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/20">

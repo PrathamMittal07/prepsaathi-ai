@@ -80,8 +80,8 @@ export default function InterviewPrep() {
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.2] mix-blend-overlay pointer-events-none" style={{ backgroundRepeat: 'repeat' }}></div>
             
             <h2 className="text-3xl font-syne font-bold text-white mb-4 relative z-10">Ready to practice?</h2>
-            <p className="text-gray-400 mb-8 max-w-2xl mx-auto relative z-10">
-              Stop reading and start talking. Jump into your dashboard and use the AI Career Coach to simulate a technical or behavioral interview right now.
+            <p style={{ maxWidth: '672px' }} className="text-gray-400 mb-8 mx-auto relative z-10">
+              Not ready for a live mock interview yet? Our AI can grill you on specific concepts until you have them completely memorized.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
               <Link 

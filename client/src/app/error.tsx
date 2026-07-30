@@ -21,8 +21,8 @@ export default function ErrorBoundary({
         </svg>
       </div>
       <h3 className="text-xl font-bold font-syne mb-2">Failed to load</h3>
-      <p className="text-text-secondary mb-6 text-sm max-w-sm">
-        Something went wrong while trying to render this section.
+      <p style={{ maxWidth: '384px' }} className="text-text-secondary mb-6 text-sm mx-auto">
+        Don't worry, our team has been notified. You can try again or head back home.
       </p>
       <button
         onClick={() => reset()}

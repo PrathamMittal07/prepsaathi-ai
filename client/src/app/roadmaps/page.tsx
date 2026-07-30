@@ -90,7 +90,7 @@ export default function Roadmaps() {
           {/* CTA */}
           <div className="bg-[#8E2F52]/5 border border-[#8E2F52]/10 rounded-3xl p-10 text-center">
             <h2 className="text-2xl font-syne font-bold text-gray-900 mb-4">Want a custom roadmap?</h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p style={{ maxWidth: '672px' }} className="text-gray-600 mb-8 mx-auto">
               Our AI Career Coach can generate a personalized roadmap based exactly on the skills you already have, saving you months of redundant learning.
             </p>
             <Link 
