@@ -61,7 +61,7 @@ export default function Changelog() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-3xl mx-auto px-6">
+        <div style={{ width: '100%', maxWidth: '768px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6">
           
           <div className="mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-4">Changelog</h1>

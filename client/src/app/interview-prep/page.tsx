@@ -43,9 +43,9 @@ export default function InterviewPrep() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-6xl mx-auto px-6 relative z-10">
+        <div style={{ width: '100%', maxWidth: '1152px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6 relative z-10">
           
-          <div className="text-center mb-16 max-w-3xl mx-auto">
+          <div style={{ width: '100%', maxWidth: '768px', margin: '0 auto' }} className="w-full text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6 leading-tight">
               Master the <span className="text-[#8E2F52]">Interview</span>
             </h1>

@@ -48,7 +48,7 @@ export default function Blog() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-6xl mx-auto px-6">
+        <div style={{ width: '100%', maxWidth: '1152px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6">
           
           <div className="mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6">The Prep2Place Blog</h1>
@@ -100,7 +100,7 @@ export default function Blog() {
           {/* Newsletter Section */}
           <div className="mt-24 bg-[#8E2F52] rounded-3xl p-10 md:p-12 relative overflow-hidden text-center z-10">
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.2] mix-blend-overlay pointer-events-none" style={{ backgroundRepeat: 'repeat' }}></div>
-            <div className="relative z-10 max-w-2xl mx-auto">
+            <div style={{ width: '100%', maxWidth: '672px', margin: '0 auto' }} className="w-full relative z-10">
               <h2 className="text-3xl font-syne font-bold text-white mb-4">Never miss an update</h2>
               <p className="text-white/80 mb-8 text-lg">Get our latest career strategies delivered straight to your inbox once a week.</p>
               <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>

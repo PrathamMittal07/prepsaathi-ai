@@ -32,16 +32,16 @@ export default function ContactUs() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-6xl mx-auto px-6">
+        <div style={{ width: '100%', maxWidth: '1152px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6">
           
-          <div className="text-center mb-16 max-w-2xl mx-auto">
+          <div style={{ width: '100%', maxWidth: '672px', margin: '0 auto' }} className="w-full text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6">Get in touch</h1>
             <p className="text-xl text-gray-600">
               Have a question about our AI tools? Want to report a bug? Or just want to say hi? We'd love to hear from you.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-12 max-w-5xl mx-auto relative z-10">
+          <div style={{ width: '100%', maxWidth: '1024px', margin: '0 auto' }} className="w-full grid md:grid-cols-5 gap-12 relative z-10">
             {/* Contact Info */}
             <div className="md:col-span-2 space-y-8">
               <div className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">

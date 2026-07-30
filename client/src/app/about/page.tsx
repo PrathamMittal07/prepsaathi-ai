@@ -38,9 +38,9 @@ export default function AboutUs() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-5xl mx-auto px-6">
+        <div style={{ width: '100%', maxWidth: '1024px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6">
           {/* Hero Section */}
-          <div className="text-center mb-24 max-w-3xl mx-auto">
+          <div style={{ width: '100%', maxWidth: '768px', margin: '0 auto' }} className="w-full text-center mb-24">
             <h1 className="text-5xl md:text-6xl font-syne font-bold text-gray-900 mb-6 leading-tight">
               Leveling the playing field for <span className="text-[#8E2F52]">early-career</span> talent.
             </h1>

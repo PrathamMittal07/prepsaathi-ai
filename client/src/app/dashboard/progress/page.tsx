@@ -67,7 +67,7 @@ export default function ProgressTrackerPage() {
 
   return (
     <div className="min-h-screen bg-[#F9FAFB] -m-4 py-8 px-4 sm:px-8 font-sans">
-      <div className="max-w-7xl mx-auto">
+      <div style={{ width: '100%', maxWidth: '1280px', margin: '0 auto' }} className="w-full">
         <div className="mb-8">
           <h1 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">Your Roadmaps</h1>
           <p className="text-slate-500 mt-2 text-lg">Track your learning progress and missions.</p>

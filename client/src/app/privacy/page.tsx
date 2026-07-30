@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-4xl mx-auto px-6">
+        <div style={{ width: '100%', maxWidth: '896px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6">
           <div className="mb-12">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6">Privacy Policy</h1>
             <p className="text-gray-600 text-lg">Last updated: July 30, 2026</p>

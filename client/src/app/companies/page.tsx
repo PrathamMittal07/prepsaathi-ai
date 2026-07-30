@@ -61,9 +61,9 @@ export default function Companies() {
       <Navbar />
 
       <PageContainer>
-        <div className="pt-32 pb-24 max-w-6xl mx-auto px-6 relative z-10">
+        <div style={{ width: '100%', maxWidth: '1152px', margin: '0 auto' }} className="w-full pt-32 pb-24 px-6 relative z-10">
           
-          <div className="text-center mb-16 max-w-3xl mx-auto">
+          <div style={{ width: '100%', maxWidth: '768px', margin: '0 auto' }} className="w-full text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-syne font-bold text-gray-900 mb-6 leading-tight">
               Company <span className="text-[#8E2F52]">Interview Guides</span>
             </h1>
@@ -71,7 +71,7 @@ export default function Companies() {
               Every company interviews differently. Learn the exact process, what they look for, and how to crack their specific rounds.
             </p>
             
-            <div className="relative max-w-xl mx-auto">
+            <div style={{ width: '100%', maxWidth: '576px', margin: '0 auto' }} className="w-full relative">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                 <Search className="h-5 w-5 text-gray-400" />
               </div>
