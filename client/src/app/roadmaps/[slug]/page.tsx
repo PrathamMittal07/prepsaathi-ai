@@ -133,8 +133,9 @@ const roadmapData: Record<string, any> = {
   }
 };
 
-export default function PublicRoadmapPage({ params }: { params: { slug: string } }) {
-  const roadmap = roadmapData[params.slug];
+export default async function PublicRoadmapPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const roadmap = roadmapData[resolvedParams.slug];
 
   if (!roadmap) {
     notFound();
