@@ -3,7 +3,7 @@ import { useResume } from '../context/ResumeContext';
 import { FileText, Clock, Trash2, ArrowRight, CheckCircle, RotateCcw } from 'lucide-react';
 
 export function ResumeHistoryDashboard() {
-  const { activeResume, history, removeResume, setWorkflowState, startAnalysis } = useResume();
+  const { activeResume, history, removeResume, startAnalysis } = useResume();
 
   if (!activeResume) return null;
 
