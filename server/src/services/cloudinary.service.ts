@@ -1,8 +1,10 @@
 import { v2 as cloudinary } from 'cloudinary';
 import streamifier from 'streamifier';
 
-console.log('CLOUDINARY CONFIG CALLED');
-console.log('API KEY:', process.env.CLOUDINARY_API_KEY ? 'EXISTS' : 'UNDEFINED');
+import { logger } from '../utils/logger';
+
+logger.info('CLOUDINARY CONFIG CALLED');
+logger.info(`API KEY: ${process.env.CLOUDINARY_API_KEY ? 'EXISTS' : 'UNDEFINED'}`);
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,

@@ -13,29 +13,7 @@ export class ResumeAnalysisService {
     // 2. Extract Text
     let text = resume.extractedText || '';
     if (!text) {
-      try {
-        if (!resume.secureUrl) {
-           throw new Error('Resume does not have a valid Cloudinary URL');
-        }
-        // Fallback: Download from Cloudinary if text was not extracted
-        console.log(`Fallback fetching PDF from Cloudinary for resume ${resumeId}`);
-        const response = await fetch(resume.secureUrl as string);
-        if (!response.ok) throw new Error(`Failed to fetch PDF: ${response.status} ${response.statusText}`);
-        const arrayBuffer = await response.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        text = await ResumeParserService.extractText(buffer);
-        
-        // Optionally, store the fallback text back to db so we don't fetch again
-        if (text) {
-          await prisma.resume.update({
-            where: { id: resumeId },
-            data: { extractedText: text }
-          });
-        }
-      } catch (e: any) {
-         console.error('PDF Extraction Error:', e.message || e);
-         throw new Error('Failed to extract text from PDF: ' + (e.message || 'Unknown Error'));
-      }
+      throw new Error('Resume text was not properly extracted during upload. Please re-upload the resume.');
     }
 
     // 3. AI Analysis

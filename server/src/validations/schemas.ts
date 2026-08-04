@@ -1,4 +1,4 @@
-﻿import { z } from 'zod';
+import { z } from 'zod';
 
 const paramIdSchema = z.object({
   id: z.string().uuid('Invalid ID format'),
@@ -7,8 +7,8 @@ const paramIdSchema = z.object({
 // Auth Schemas
 export const registerSchema = z.object({
   body: z.object({
-    firstName: z.string().min(2, 'First name is too short'),
-    lastName: z.string().min(2, 'Last name is too short'),
+    firstName: z.string().min(1, 'First name is required'),
+    lastName: z.string().optional().or(z.literal('')),
     email: z.string().email('Invalid email address'),
     password: z.string().min(6, 'Password must be at least 6 characters'),
   }).strict(),
@@ -55,8 +55,8 @@ export const coachChatSchema = z.object({
 // Profile Update Schemas
 export const updateUserProfileSchema = z.object({
   body: z.object({
-    firstName: z.string().min(2, 'First name is too short').optional(),
-    lastName: z.string().min(2, 'Last name is too short').optional(),
+    firstName: z.string().min(1, 'First name is required').optional(),
+    lastName: z.string().optional().or(z.literal('')),
   }).strict(),
   params: z.object({}).strict().optional(),
   query: z.object({}).strict().optional(),
